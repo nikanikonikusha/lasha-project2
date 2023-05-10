@@ -1,0 +1,176 @@
+mgl-map {
+  height: 100%;
+  width: 100%;
+}
+
+.zindex {
+  z-index: 125125;
+}
+
+.marker {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.rent_detail_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rent_detail_box .content_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.rent_detail_box .content_box .left_Image_side {
+  width: 100%;
+  height: 100%;
+}
+.rent_detail_box .content_box .left_Image_side .image_box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.rent_detail_box .content_box .left_Image_side .image_box .small_images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.rent_detail_box .content_box .left_Image_side .image_box .small_images .small_image {
+  padding: 8px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px !important;
+}
+.rent_detail_box .content_box .left_Image_side .image_box .main_image {
+  width: 100%;
+  border-radius: 20px;
+  padding: 8px;
+}
+.rent_detail_box .content_box .right_info_side {
+  padding: 8px;
+}
+.rent_detail_box .content_box .right_info_side .content {
+  border: solid 1px black;
+  border-radius: 20px;
+  height: 100%;
+  padding: 20px;
+}
+.rent_detail_box .content_box .right_info_side .content .car_brand {
+  width: 100%;
+  justify-content: space-between;
+}
+.rent_detail_box .content_box .right_info_side .content .car_brand p {
+  font-size: 15px !important;
+  margin: 0;
+}
+.rent_detail_box .content_box .right_info_side .content h1 {
+  color: #1a202c;
+}
+.rent_detail_box .content_box .right_info_side .content p {
+  color: #abbacf;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+.rent_detail_box .content_box .right_info_side .content p span {
+  color: #596780;
+  margin-left: 20px;
+  font-weight: bold;
+}
+@media (max-width: 443px) {
+  .rent_detail_box .content_box .right_info_side .content p {
+    font-size: 16px;
+  }
+}
+.rent_detail_box .content_box .right_info_side .content .calc {
+  margin: 25px 0px;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider {
+  display: flex;
+  align-items: center;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] {
+  width: 65%;
+  -webkit-appearance: none;
+  max-height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #6a8fff;
+  cursor: ew-resize;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  margin-top: -5px;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-webkit-slider-runnable-track {
+  background: rgb(203, 203, 203);
+  max-height: 10px;
+  border-radius: 7px;
+  border: 0;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]:focus {
+  border: 0;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]:focus-visible {
+  border: 0 !important;
+  outline: 0 !important;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] span {
+  margin-left: 20px;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .bottom {
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.rent_detail_box .content_box .right_info_side .content .calc .bottom button {
+  background-color: #3563e9;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 26px;
+  max-height: 50px;
+}/*# sourceMappingURL=style.css.map */

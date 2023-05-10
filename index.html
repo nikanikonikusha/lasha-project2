@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rent_detail_box container">
+        <div class="content_box row">
+          <div class="left_Image_side col-lg-6">
+            <div class="image_box container">
+                <div class="row">
+                    <img class="main_image col-12"  src="https://www.motortrend.com/uploads/sites/11/2019/04/By-Design-Polestar-2-06.jpg" alt="" />
+      
+                    <div class="small_images container">
+                        <div class="row">
+                            <img class="small_image col-6" src="https://www.motortrend.com/uploads/sites/11/2019/04/By-Design-Polestar-2-06.jpg" alt="" />
+                            <img  class="small_image col-6" src="https://www.polestar.com/dato-assets/11286/1676988972-polestar-181018_metal_9_my23_v001-2.jpg?h=900" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      
+          <div class="right_info_side col-lg-6">
+            <div class="content">
+                <div class="car_brand d-flex">
+                    <p>{{car?.brand}}</p>
+                    <i class="bi bi-heart"></i>
+                </div>
+                <h1>{{car?.model}}</h1>
+                <p>Year: <span>{{car?.year}}</span></p>
+                <p>Fuel Capacity: <span>{{car?.fuelCapacity}}</span></p>
+                <p>Transmission: <span>{{car?.transmission}}</span></p>
+                <p>Car Capacity: <span>{{car?.capacity}}</span></p>
+        
+                <div class="calc">
+                  <label for="multiplier">რამდენი დღით გსურთ შეძენა?</label>
+                  <div class="slider">
+                    <input type="range" id="multiplier" [(ngModel)]="multiplier" min="1" max="30" step="1">
+                    <span>{{ multiplier }} დღე</span>
+                  </div>
+                  <div class="ifcar" *ngIf="car">
+                    Result: {{ multiplier * car.price }}
+                  </div>
+                  <div class="ifcar" *ngIf="!car">
+                    სულ გადასახდელი: 0
+                  </div>         </div> 
+                
+                <div class="bottom d-flex">
+                    <p>ფასი: <span>{{car?.price}}₾</span></p>
+                    <button (click)="BuyCar(PhoneNumber, car?.id ?? 0, multiplier)">ყიდვა</button>
+                </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <app-map></app-map> -->
+      
+</body>
+</html>
