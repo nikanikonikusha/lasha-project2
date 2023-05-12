@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  background-color: #f6f7f9;
+  font-family: "Plus Jakarta Sans";
+}
+
+.rented_car {
+  padding: 5px;
+  box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.261);
+  background-color: white;
+  margin: 50px;
+  width: 300px;
+  border-radius: 15px;
+}
+.rented_car .text_content {
+  width: 100%;
+  padding: 10px;
+}
+.rented_car .text_content .main_info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.rented_car .text_content .main_info h1 {
+  margin: 0;
+  color: #1a202c;
+  font-size: 28px;
+  font-weight: bold;
+}
+.rented_car .text_content .main_info p {
+  margin: 0;
+  font-size: 15px;
+  color: #90a3bf;
+  font-weight: 500;
+  background: #e6e8ec;
+  margin: 5px 0px;
+  padding: 3px 8px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.rented_car .text_content .rental_details {
+  margin-top: 10px;
+  width: 100%;
+}
+.rented_car .text_content .rental_details .detail {
+  margin: 5px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rented_car .text_content .rental_details .detail p:first-child {
+  font-size: 17px;
+  color: #90a3bf;
+  margin-bottom: 0;
+}
+.rented_car .text_content .rental_details .detail p:nth-child(2) {
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  color: #1a202c;
+}/*# sourceMappingURL=rented.css.map */

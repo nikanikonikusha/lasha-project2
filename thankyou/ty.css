@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  min-height: 100vh;
+  background-color: #f6f7f9;
+  font-family: "Plus Jakarta Sans";
+}
+
+.thank_you {
+  margin: 50px auto;
+  min-height: 400px;
+  width: 100% !important;
+}
+.thank_you i {
+  line-height: 0px;
+  border-radius: 50%;
+  color: white;
+  font-size: 200px;
+  padding: 100px;
+  background-color: #3563e9;
+}
+@media (max-width: 420px) {
+  .thank_you i {
+    padding: 70px;
+  }
+}
+.thank_you h1 {
+  color: #1a202c;
+  margin: 30px 0px;
+  text-align: center;
+}
+.thank_you p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #90a3bf;
+}/*# sourceMappingURL=ty.css.map */
