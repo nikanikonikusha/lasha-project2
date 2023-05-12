@@ -110,20 +110,17 @@ mgl-map {
   align-items: center;
 }
 .rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] {
-  width: 65%;
   -webkit-appearance: none;
+  width: 65%;
   max-height: 10px;
   background: rgba(255, 255, 255, 0.6);
 }
-.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] ::-webkit-slider-thumb {
+.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
+  height: 20px !important;
+  width: 20px !important;
   border-radius: 50%;
   background: #6a8fff;
-  cursor: ew-resize;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
   margin-top: -5px;
 }
 .rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-webkit-slider-runnable-track {
@@ -145,6 +142,7 @@ mgl-map {
   background: transparent;
 }
 .rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
   background: rgb(203, 203, 203);
   max-height: 10px;
   border-radius: 7px;
@@ -157,15 +155,15 @@ mgl-map {
   border: 0 !important;
   outline: 0 !important;
 }
-.rent_detail_box .content_box .right_info_side .content .calc .slider input[type=range] span {
+.rent_detail_box .content_box .right_info_side .content .calc .slider span {
   margin-left: 20px;
 }
-.rent_detail_box .content_box .right_info_side .content .calc .bottom {
+.rent_detail_box .content_box .right_info_side .content .bottom {
   margin-top: 20px;
   justify-content: space-between;
   align-items: center;
 }
-.rent_detail_box .content_box .right_info_side .content .calc .bottom button {
+.rent_detail_box .content_box .right_info_side .content .bottom button {
   background-color: #3563e9;
   color: white;
   border: 0;

@@ -114,18 +114,16 @@ mgl-map {
 
 
                     input[type="range"] {
-                        width: 65%;
                         -webkit-appearance: none;
+                        width: 65%;
                         max-height: 10px;
                         background: rgba(255, 255, 255, 0.6);
-                        & {::-webkit-slider-thumb {
+                        &::-webkit-slider-thumb {
                             -webkit-appearance: none;
-                            height: 20px;
-                            width: 20px;
+                            height: 20px !important;
+                            width: 20px !important;
                             border-radius: 50%;
                             background: #6a8fff;;
-                            cursor: ew-resize;
-                            transition: background .3s ease-in-out;
                             margin-top: -5px;
                         }
                         &::-webkit-slider-runnable-track  {
@@ -147,6 +145,7 @@ mgl-map {
                             background: transparent;
                         }
                         &::-webkit-slider-runnable-track  {
+                            -webkit-appearance: none;
                             background: rgb(203, 203, 203);
                             max-height: 10px;
                             border-radius: 7px;
@@ -186,5 +185,4 @@ mgl-map {
         }
       }
     }
-  }
-}
+ }
